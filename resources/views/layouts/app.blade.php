@@ -32,7 +32,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Task List v2.0
+                    Task List v3.0
                 </a>
             </div>
 
