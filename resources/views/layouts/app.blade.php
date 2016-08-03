@@ -23,6 +23,9 @@
         .fa-btn {
             margin-right: 6px;
         }
+        .task-header {
+            color: #D0D0D0;
+        }
     </style>
 </head>
 <body id="app-layout">
@@ -30,12 +33,13 @@
         <div class="container">
             <div class="navbar-header">
                 <!-- Branding Image -->
-                <!--a class="navbar-brand" href="{{ url('/') }}"></a-->
+                <a class="navbar-brand" href="{{ url('/') }}" id="logo">
+                </a>
             </div>
         </div>
     </nav>
     <div class="container">
-        <div class="row text-center">
+        <div class="row text-center task-header">
             <h2>Task List v3.0</h2>
         </div>
     </div>
@@ -44,6 +48,12 @@
     <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+    <script>
+        $(function () {
+            $.get("./calmio-logo.svg", function (data) {
+                $('#logo').html((new XMLSerializer().serializeToString(data)));
+            });
+        });
+    </script>
 </body>
 </html>
