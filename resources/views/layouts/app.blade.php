@@ -10,6 +10,7 @@
     <!-- Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ elixir('images/favicon.ico') }}">
 
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -29,16 +30,18 @@
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Task List v3.0
+                    <div>{{ elixir('images/calmio-logo.svg') }}</div>
                 </a>
             </div>
-
         </div>
     </nav>
-
+    <div class="container">
+        <div class="row text-center">
+            <h2>Task List v3.0</h2>
+        </div>
+    </div>
     @yield('content')
 
     <!-- JavaScripts -->
