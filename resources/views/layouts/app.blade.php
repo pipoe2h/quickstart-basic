@@ -17,14 +17,30 @@
     <style>
         body {
             font-family: 'Lato';
-            background-color: #F6F7F7;
+            background-color: #005495;
+        }
+
+        .navbar.navbar-default {
+            background-color: #0d0d0d;
+            border: none;
+        }
+
+        .navbar-header {
+            background-color: #171F26;
         }
 
         .fa-btn {
             margin-right: 6px;
         }
+
         .task-header {
             color: #D0D0D0;
+        }
+
+        #logo svg {
+            width: 70px;
+            bottom: 10px;
+            position: relative;
         }
     </style>
 </head>
