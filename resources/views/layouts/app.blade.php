@@ -56,7 +56,7 @@
     </nav>
     <div class="container">
         <div class="row text-center task-header">
-            <h2>Task List v3.0</h2>
+            <h2>Task List v1.0</h2>
         </div>
     </div>
     @yield('content')
