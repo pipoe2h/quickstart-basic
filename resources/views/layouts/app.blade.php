@@ -56,7 +56,7 @@
     </nav>
     <div class="container">
         <div class="row text-center task-header">
-            <h2>Calm Demo App v1.0</h2>
+            <h2>Calm Demo App v2.0</h2>
         </div>
     </div>
     @yield('content')
