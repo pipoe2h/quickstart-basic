@@ -34,7 +34,7 @@
     <div id="calmgb" class="calm-background"></div>
     <div class="container">
         <div class="row text-center task-header">
-            <h2>Task Manager v7.6</h2>
+            <h2>Task Manager v7.7</h2>
         </div>
     </div>
     @yield('content')
