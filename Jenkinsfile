@@ -3,11 +3,11 @@ timestamps {
     node() {
         stage ('Launch Calm Blueprint') {
             step([$class                             : 'BlueprintLaunch',
-                          appProfileName             : 'Default', 
+                          appProfileName             : 'Azure', 
                           applicationName            : 'Azure_${JOB_BASE_NAME}_${BUILD_ID}', 
                           blueprintDescription       : 'Description is empty', 
                           blueprintName              : 'php-task-manager-azure', 
-                          projectName                : 'Azure', 
+                          projectName                : 'ilp', 
                           runtimeVariables           : '{}', 
                           waitForSuccessFulLaunch    : true])
         }
